@@ -5,8 +5,10 @@
 </p>
 ##License
 netw is published under the [GNU GPL 3.0 License](https://github.com/pedro-javierf/netw/blob/master/LICENSE) 
+
 ##About
 netw is modern C and C++ lib, that provides the developer with cross-platform networking code; this means, you can have portable networking capabilities without having to learn specific system APIs.
+
 ##Features
 - [x] Winsock2 TCP 
 - [ ] Winsock2 UDP 

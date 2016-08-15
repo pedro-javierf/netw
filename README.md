@@ -18,16 +18,16 @@ netw is modern C and C++ lib, that provides the developer with cross-platform ne
 
 ##Usage
 on your C/C++ program, include the following header:<br>
-`#include netw.h`
+`#include netw.h`<br>
 now you can call all the netw functions.
 
 ##Todo
 netw is an open source wrapper and is still in an early state of development. At the moment, it hasn't been tested within huge projects and performance hasn't been tested neither. Things planned for the future:<br>
--Improve linux development speed
--Support raw sockets
--Wrapping other socket calls (send, recv, etc...)
--Improve stability and performance
+-Improve linux development speed<br>
+-Support raw sockets<br>
+-Wrapping other socket calls (send, recv, etc...)<br>
+-Improve stability and performance<br>
 
 ##Notes
--netw will automatically detect your compiler/OS at build time
+-netw will automatically detect your compiler/OS at build time<br>
 -if build are done in windows platforms, you must call `initWinsock()` before using netw, returns 0 if successful. You must also call ´stopWinsock()´ at the end of your program or when you won't use netw anymore in your code.

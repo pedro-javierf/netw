@@ -6,15 +6,15 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #pragma comment(lib, "ws2_32.lib")
-#include "netwwin32.cpp"
+#include "netwwin32.c"
 
-#else
+#elif __linux__
 #include <sys/types.h> 
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>//May not be needed
 #include <unistd.h>
-#include "netwlinux.cpp"
+#include "netwlinux.c"
 
 #endif
 

@@ -68,15 +68,6 @@ int TCPSocketClient(const char* port, const char* serverName)
 	// An error code we will use to get more information about our errors
 	int error, iResult;
 
-	// The winsock data structure
-	WSAData wsaData;
-
-	// Startup winsock
-	if ((error = WSAStartup(MAKEWORD(2, 2), &wsaData)) == SOCKET_ERROR)
-	{
-		return -1;
-	}
-
 	// Create my socket
 	int ConnectSocket;
 	

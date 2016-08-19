@@ -29,8 +29,6 @@ int TCPSocketServer(unsigned short port)
     //Listen
     listen(socket_desc , 3);
 	return socket_desc;
-	
-	
 
 }
 

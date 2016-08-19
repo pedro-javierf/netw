@@ -1,4 +1,5 @@
-#ifndef INC_NETW_H
+//Rev 0.2
+#ifndef INC_NETW_H //Macro protection
 #define INC_NETW_H
 
 
@@ -27,4 +28,4 @@ int TCPSocketClient(unsigned short port, const char* serverName);
 void socketClose(int socket);
 
 
-#endif
+#endif //End of macro protection

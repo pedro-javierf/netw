@@ -76,7 +76,7 @@ int TCPSocketClient(const char* port, const char* serverName)
 	
 	DWORD dwRetval;
 
-	ZeroMemory( &hints, sizeof(hints) );
+	SecureZeroMemory( &hints, sizeof(hints) );
     hints.ai_family = AF_UNSPEC;
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = IPPROTO_TCP;
@@ -84,7 +84,7 @@ int TCPSocketClient(const char* port, const char* serverName)
 	//Get server info
 	dwRetval = getaddrinfo(serverName,port,&hints,&result);
 	
-	if ( dwRetval != 0 ) {//fucks here
+	if ( dwRetval != 0 ) {
 		return -2;
     }
 
@@ -110,14 +110,8 @@ int TCPSocketClient(const char* port, const char* serverName)
         break;
     }
 	
-
 	freeaddrinfo(result);
-	
-	if (ConnectSocket == INVALID_SOCKET) {
-        return -4;
-    }
 
-	
 	return ConnectSocket;
 }
 
@@ -129,25 +123,3 @@ void socketClose(int socket)
 	closesocket(socket);
 
 }
-
-
-/*
-//Strings are good, strings are love
-int sendPacket(int socket, std::string packet)
-{
-	int error = send(socket, packet.c_str(), packet.length(), 0);
-	if(error==SOCKET_ERROR)
-	{return -1;}
-	else{return 0;}
-
-}
-//Receives a maximum 256 bytes packet over a TCP socket
-int recvPacket(int socket, std::string packet, &buffer)
-{
-
-	int error = recv(socket, *buffer, 256, 0)
-	if (error==0){return -1;}
-	else{return 0;}
-	
-}
-*/

@@ -14,7 +14,7 @@ netw is modern C and C++ lib, that provides the developer with cross-platform ne
 - [ ] Winsock2 UDP 
 - [x] Linux TCP
 - [ ] Linux UDP 
-- [ ] Linux cross-compilers support
+- [x] Linux cross-compilers support (supports any system that relies on Linux syntax/cross-libs)
 
 ##Usage
 on your C/C++ program, include the following header:<br>

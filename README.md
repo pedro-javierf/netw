@@ -7,7 +7,6 @@
 netw is published under the [GNU GPL 3.0 License](https://github.com/pedro-javierf/netw/blob/master/LICENSE) 
 
 ##About
-netw is modern C and C++ lib, that provides the developer with cross-platform networking code; this means, you can have portable networking capabilities without having to learn specific system APIs.
 
 ##Features
 - [x] Winsock2 TCP 
@@ -22,12 +21,11 @@ on your C/C++ program, include the following header:<br>
 now you can call all the netw functions.
 
 ##Todo
-netw is an open source wrapper and is still in an early state of development. At the moment, it hasn't been tested within huge projects and performance hasn't been tested neither. Things planned for the future:<br>
--Improve linux development speed<br>
--Support raw sockets<br>
--Wrapping other socket calls (send, recv, etc...)<br>
+netw is my own open source wrapper and is still in an early state of development. It is intended to bring cross-platform support in a really easy way, therefore; It hasn't been tested within huge projects and performance hasn't been tested neither. Things planned for the future:<br>
+-Improve linux development <br>
+-Support raw sockets (Linux mainly)<br>
 -Improve stability and performance<br>
 
 ##Notes
 -netw will automatically detect your compiler/OS at build time<br>
--if build are done in windows platforms, you must call `initWinsock()` before using netw, returns 0 if successful. You must also call ´stopWinsock()´ at the end of your program or when you won't use netw anymore in your code.
+-if builds are done in windows platforms, you must call `initWinsock()` before using netw to initialize the WinSock32, it returns 0 if successful. You must also call ´stopWinsock()´ at the end of your program or when you won't use netw anymore in your code.

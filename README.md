@@ -3,6 +3,7 @@
   <br><br>
   <b>High level cross-platform network wrapper</b><br>
 </p>
+
 ##License
 netw is published under the [GNU GPL 3.0 License](https://github.com/pedro-javierf/netw/blob/master/LICENSE) 
 

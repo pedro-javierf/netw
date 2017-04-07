@@ -42,7 +42,7 @@
 int initWinsock();
 void stopWinsock();
 int TCPSocketServer(unsigned short port);
-int TCPSocketClient(unsigned short port, const char* serverName);
+int TCPSocketClient(const char* port, const char* serverName)
 void socketClose(int socket);
 
 
